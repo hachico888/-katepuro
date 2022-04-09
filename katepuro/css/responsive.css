@@ -1,0 +1,77 @@
+@media screen and (max-width: 1200px) {
+  .title-pink,
+  .title-blue {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .b-button,
+  .title-pink,
+  .title-blue {
+    font-size: 2rem;
+  }
+  .problem-text-container .text-size {
+    font-size: 2rem;
+  }
+  .narrow-down .container .position-left,
+  .narrow-down .container .position-right {
+    width: 20%;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+    font-size: 2rem;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .zoom-logo {
+    width: 25%;
+  }
+  .narrow-down .container .narrow-down-text .text-size-img {
+    font-size: 2rem;
+  }
+  .menter .img-container .menter-leaf {
+    width: 80%;
+  }
+  .menter .container .p-container {
+    font-size: 2rem;
+  }
+  .menter .container .p-container .font-size {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .problem .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .problem .container .problem-image {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-img-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .narrow-down .container .narrow-down-text .text-size-img {
+    font-size: 1.8rem;
+  }
+  .narrow-down .container .zoom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .narrow-down .container .zoom .zoom-logo {
+    margin-left: 70%;
+  }
+  .narrow-down .container .position-right {
+    bottom: -3%;
+  }
+  .menter {
+    margin-top: 10%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

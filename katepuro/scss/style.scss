@@ -1,0 +1,98 @@
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 1280px;
+  color: #333;
+  padding: 0 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  &-btn {
+    margin-top: 14px;
+  }
+}
+
+.main {
+  img {
+    max-width: 100%;
+  }
+  &-btn {
+    padding: 2% 0 4%;
+    text-align: center;
+  }
+}
+
+.problem {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+  }
+}
+
+.menter {
+  margin-top: 12%;
+  .container {
+    padding: 0% 4%;
+    text-align: center;
+  }
+  &-btn {
+    padding: 5%;
+    text-align: center;
+  }
+}
+
+.footer {
+  height: 80px;
+  background: #ffff4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    img {
+      height: 80px;
+    }
+}     
+
+.narrow-down {
+  .container {
+    position: relative;
+      .position-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .position-right {
+        position: absolute;
+        right: 0%;
+        bottom: -8%;
+      }
+      .logo {
+        text-align: center;
+        img {
+          width: 60%;
+        }
+      }
+      .narrow-down-text {
+        margin: 0 6%;
+          .narrow-down-text-container {
+            display: flex;
+          }
+          .narrow-down-img-container {
+            display: flex;
+            justify-content: center;
+          }
+      }
+  }
+}

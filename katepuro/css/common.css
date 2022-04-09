@@ -1,0 +1,144 @@
+.button {
+  display: inline-block;
+  padding: 0.2em 0.8rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #06c755;
+  border-radius: 30px;
+  -webkit-box-shadow: 7px 7px #027a33;
+          box-shadow: 7px 7px #027a33;
+}
+
+.button:hover {
+  color: #06c755;
+  background: #fff;
+  border: 1px #06c755 solid;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(7px, 7px);
+          transform: translate(7px, 7px);
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.b-button {
+  display: inline-block;
+  padding: 0.4em 2rem;
+  font-size: 3rem;
+  color: #fff;
+  background: #06c755;
+  border-radius: 60px;
+  -webkit-box-shadow: 14px 14px #027a33;
+          box-shadow: 14px 14px #027a33;
+}
+
+.b-button:hover {
+  color: #06c755;
+  background: #fff;
+  border: 1px #06c755 solid;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(14px, 14px);
+          transform: translate(14px, 14px);
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.section-title-yellow {
+  background-color: #ffff4b;
+}
+
+.title-pink {
+  font-size: 3rem;
+  color: #DE5E97;
+  text-align: center;
+  padding: 1%;
+}
+
+.title-blue {
+  font-size: 3rem;
+  color: #1C98ED;
+  text-align: center;
+  padding: 1%;
+}
+
+.problem-image img {
+  width: 92%;
+}
+
+.problem-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.problem-text-container .icon-container {
+  height: 62px;
+  margin: 0.5% 0;
+}
+
+.problem-text-container .text-size {
+  font-size: 2.5rem;
+  margin-left: 2%;
+}
+
+.problem-text-container:nth-child(2) {
+  margin: 2% 0;
+}
+
+.agitation img {
+  width: 100%;
+}
+
+.p-pink {
+  color: #DE5E97;
+}
+
+.p-blue {
+  color: #1C98ED;
+}
+
+.p-red {
+  color: #E44650;
+}
+
+.narrow-down .container .narrow-down-text .narrow-down-text-container {
+  margin: 2% 0;
+}
+
+.narrow-down .container .narrow-down-text .narrow-down-text-container .icon-container {
+  height: 62px;
+  margin: 0.5% 0;
+}
+
+.narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+  font-size: 2.5rem;
+  margin-left: 2%;
+}
+
+.narrow-down .container .narrow-down-text .text-size-img {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.menter .img-container {
+  text-align: center;
+}
+
+.menter .img-container .menter-leaf {
+  width: 100%;
+}
+
+.menter .container .menter-img {
+  border-radius: 20%;
+  width: 100%;
+}
+
+.menter .container .p-container {
+  font-size: 2.5rem;
+}
+
+.menter .container .p-container .font-size {
+  font-size: 3.5rem;
+}
+/*# sourceMappingURL=common.css.map */
