@@ -9,9 +9,12 @@
   .b-button,
   .title-pink,
   .title-blue {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-  .problem-text-container .text-size {
+  .problem .container .problem-image {
+    width: 40%;
+  }
+  .problem .container .problem-text-container .text-size {
     font-size: 2rem;
   }
   .narrow-down .container .position-left,
@@ -22,23 +25,49 @@
     font-size: 2rem;
   }
   .narrow-down .container .narrow-down-text .narrow-down-text-container .zoom-logo {
-    width: 25%;
+    width: 30%;
   }
   .narrow-down .container .narrow-down-text .text-size-img {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .menter .img-container .menter-leaf {
     width: 80%;
   }
+  .menter .container .menter-img {
+    width: 50%;
+  }
   .menter .container .p-container {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .menter .container .p-container .font-size {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .b-button,
+  .title-pink,
+  .title-blue {
+    font-size: 2rem;
+  }
+  .problem .container .problem-text-container .text-size {
+    font-size: 1.8rem;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+    font-size: 1.8rem;
+  }
+  .narrow-down .container .narrow-down-text .text-size-img {
+    font-size: 2rem;
+  }
+  .menter .container .p-container {
+    font-size: 1.4rem;
+  }
+  .menter .container .p-container .font-size {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .problem .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -49,29 +78,172 @@
     width: 30%;
     margin: 0 auto;
   }
+  .problem .container .problem-image img {
+    width: 70%;
+  }
+  .problem .container .problem-text-container .text-size {
+    font-size: 1.6rem;
+  }
+  .problem .container .problem-text-container .icon-container {
+    height: 42px;
+  }
   .narrow-down .container .narrow-down-text .narrow-down-img-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
   }
   .narrow-down .container .narrow-down-text .text-size-img {
     font-size: 1.8rem;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+    font-size: 1.6rem;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .icon-container {
+    height: 42px;
   }
   .narrow-down .container .zoom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .narrow-down .container .zoom .zoom-logo {
-    margin-left: 70%;
+    margin-left: 60%;
   }
   .narrow-down .container .position-right {
     bottom: -3%;
   }
   .menter {
     margin-top: 10%;
+  }
+  .menter .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menter .container .menter-img {
+    width: 60%;
+  }
+  .b-button,
+  .title-blue,
+  .title-pink {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    font-size: 1.2rem;
+  }
+  .b-button,
+  .title-blue,
+  .title-pink {
+    font-size: 1.4rem;
+  }
+  .problem .container .problem-text .problem-text-container .icon-container {
+    height: 32px;
+  }
+  .problem .container .problem-text .problem-text-container .text-size {
+    font-size: 1.2rem;
+  }
+  .narrow-down .container .logo img {
+    width: 70%;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .icon-container {
+    height: 32px;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+    font-size: 1.2rem;
+  }
+  .narrow-down .container .narrow-down-text .text-size-img {
+    font-size: 1.6rem;
+  }
+  .menter .container .p-container {
+    font-size: 1.2rem;
+  }
+  .menter .container .p-container .font-size {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header img {
+    height: 40px;
+    margin-top: 20px;
+  }
+  .header-btn {
+    margin-top: 20px;
+  }
+  .header-btn .button {
+    font-size: 0.8rem;
+  }
+  .title-blue,
+  .title-pink {
+    font-size: 1rem;
+  }
+  .b-button {
+    font-size: 1rem;
+    -webkit-box-shadow: 8px 8px #027a33;
+            box-shadow: 8px 8px #027a33;
+  }
+  .problem .container .problem-text .problem-text-container .icon-container {
+    height: 22px;
+  }
+  .problem .container .problem-text .problem-text-container .text-size {
+    font-size: 0.8rem;
+  }
+  .narrow-down .container .logo img {
+    width: 70%;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .icon-container {
+    height: 22px;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+    font-size: 0.8rem;
+  }
+  .narrow-down .container .narrow-down-text .text-size-img {
+    font-size: 1rem;
+  }
+  .menter .container .p-container {
+    font-size: 0.8rem;
+  }
+  .menter .container .p-container .font-size {
+    font-size: 1rem;
+  }
+  .footer
+img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .b-button,
+  .title-blue,
+  .title-pink {
+    font-size: 0.8rem;
+  }
+  .problem .container .problem-text .problem-text-container .icon-container {
+    height: 18px;
+  }
+  .problem .container .problem-text .problem-text-container .text-size {
+    font-size: 0.6rem;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .icon-container {
+    height: 18px;
+  }
+  .narrow-down .container .narrow-down-text .narrow-down-text-container .text-size {
+    font-size: 0.6rem;
+  }
+  .narrow-down .container .narrow-down-text .text-size-img {
+    font-size: 0.8rem;
+  }
+  .menter .container .p-container {
+    font-size: 0.6rem;
+  }
+  .menter .container .p-container .font-size {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

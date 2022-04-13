@@ -1,9 +1,8 @@
-html,
 body {
   font-family: "Noto Sans JP", sans-serif;
   max-width: 1280px;
   color: #333;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 a {
@@ -38,18 +37,20 @@ li {
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 3%;
   }
 }
 
 .menter {
-  margin-top: 12%;
   .container {
-    padding: 0% 4%;
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
+    align-items: center;
   }
   &-btn {
-    padding: 5%;
+    padding: 3% 0 6%;
     text-align: center;
   }
 }
@@ -61,7 +62,7 @@ li {
   justify-content: center;
   align-items: center;
     img {
-      height: 80px;
+      height: 75px;
     }
 }     
 
@@ -80,12 +81,9 @@ li {
       }
       .logo {
         text-align: center;
-        img {
-          width: 60%;
-        }
       }
       .narrow-down-text {
-        margin: 0 6%;
+        margin: 0 6% 10%;
           .narrow-down-text-container {
             display: flex;
           }
@@ -95,4 +93,28 @@ li {
           }
       }
   }
+}
+.main,
+.problem,
+.agitation,
+.narrow-down {
+  margin-bottom: 25vh;
+}
+
+.fd-in {
+  opacity: 0;
+  transform: translate(0, 60px);
+  -webkit-transform: translate(0, 60px);
+}
+
+.fd-done {
+  opacity: 1.0;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+}
+
+section,
+.narrow-down-img-container {
+  overflow: hidden;
+  transition: .8s;
 }

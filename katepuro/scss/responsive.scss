@@ -5,16 +5,24 @@
     }
 }
 
+
 @media screen and (max-width: 1000px) {
     .b-button,
     .title-pink,
     .title-blue {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
-    .problem-text-container {
-        .text-size {
-            font-size: 2rem;
+    .problem {
+        .container {
+            .problem-image{
+                width: 40%;
+            }
+            .problem-text-container {
+                .text-size {
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
@@ -30,11 +38,11 @@
                         font-size: 2rem;
                     }
                     .zoom-logo {
-                        width: 25%;
+                        width: 30%;
                     }
                 }
                 .text-size-img {
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                 }
             }
         }
@@ -46,10 +54,13 @@
             }
         }
         .container {
+            .menter-img {
+                width: 50%;
+            }
             .p-container {
-                font-size: 2rem;
+                font-size: 1.6rem;
                 .font-size {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -57,12 +68,64 @@
 }
 
 @media screen and (max-width: 800px) {
+    .b-button,
+    .title-pink,
+    .title-blue {
+        font-size: 2rem;
+    }
+    .problem {
+        .container {
+            .problem-text-container {
+                .text-size {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .narrow-down {
+        .container {
+            .narrow-down-text {
+                .narrow-down-text-container {
+                    .text-size {
+                        font-size: 1.8rem;
+                    }
+                }
+                .text-size-img {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .menter {
+        .container {
+            .p-container {
+                font-size: 1.4rem;
+                .font-size {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
     .problem {
         .container {
             flex-direction: column;
             .problem-image {
                 width: 30%;
                 margin: 0 auto;
+                img {
+                    width: 70%;
+                }
+            }
+            .problem-text-container {
+                .text-size {
+                    font-size: 1.6rem;
+                }
+                .icon-container {
+                    height: 42px;
+                }
             }
         }
     }
@@ -71,17 +134,25 @@
             .narrow-down-text {
                 .narrow-down-img-container {
                     flex-direction: column;
-                    width: 70%;
+                    width: 50%;
                     margin: 0 auto;
                 }
                 .text-size-img {
                     font-size: 1.8rem;
                 }
+                .narrow-down-text-container {
+                    .text-size {
+                        font-size: 1.6rem;
+                    }
+                    .icon-container {
+                        height: 42px
+                    }
+                }
             } 
             .zoom {
                 flex-wrap: wrap;
                 .zoom-logo {
-                    margin-left: 70%;
+                    margin-left: 60%;
                 }
             }
             .position-right {
@@ -91,9 +162,196 @@
     }
     .menter {
         margin-top: 10%;
+        .container {
+            flex-direction: column;
+            .menter-img {
+                width: 60%;
+            }
+        }
+    }
+    .b-button,
+    .title-blue,
+    .title-pink {
+        font-size: 1.8rem;
     }
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 650px) {
+    .button {
+        font-size: 1.2rem;
+    }
+    .b-button,
+    .title-blue,
+    .title-pink {
+        font-size: 1.4rem;
+    }
+    .problem {
+        .container {
+            .problem-text {
+                .problem-text-container {
+                    .icon-container {
+                        height: 32px;
+                    }
+                    .text-size {
+                        font-size: 1.2rem;
+                    }
+                }
+            }   
+        }
+    }
+    .narrow-down {
+        .container {
+            .logo {
+                img {
+                    width: 70%;
+                }
+            }
+            .narrow-down-text {
+                .narrow-down-text-container {
+                    .icon-container {
+                        height: 32px
+                    }
+                    .text-size {
+                        font-size: 1.2rem;
+                    }
+                }
+                .text-size-img {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .menter {
+        .container {
+            .p-container {
+                font-size: 1.2rem;
+                .font-size {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .header {
+        img {
+            height: 40px;
+            margin-top: 20px;
+        }
+        &-btn {
+            margin-top: 20px;
+            .button {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .title-blue,
+    .title-pink {
+        font-size: 1rem;
+    }
+    .b-button {
+        font-size: 1rem;
+        box-shadow: 8px 8px #027a33;
+    }
+    .problem {
+        .container {
+            .problem-text {
+                .problem-text-container {
+                    .icon-container {
+                        height: 22px;
+                    }
+                    .text-size {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    .narrow-down {
+        .container {
+            .logo {
+                img {
+                    width: 70%;
+                }
+            }
+            .narrow-down-text {
+                .narrow-down-text-container {
+                    .icon-container {
+                        height: 22px;
+                    }
+                    .text-size {
+                        font-size: 0.8rem;
+                    }
+                }
+                .text-size-img {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .menter {
+        .container {
+            .p-container {
+                font-size: 0.8rem;
+                .font-size {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .footer 
+        img {
+            height: 40px;
+        }
+}
+
+@media screen and (max-width: 320px) {
+    .b-button,
+    .title-blue,
+    .title-pink {
+        font-size: 0.8rem;
+    }
+    .problem {
+        .container {
+            .problem-text {
+                .problem-text-container {
+                    .icon-container {
+                        height: 18px;
+                    }
+                    .text-size {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .narrow-down {
+        .container {
+            .narrow-down-text {
+                .narrow-down-text-container {
+                    .icon-container {
+                        height: 18px;
+                    }
+                    .text-size {
+                        font-size: 0.6rem;
+                    }
+                }
+                .text-size-img {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    .menter {
+        .container {
+            .p-container {
+                font-size: 0.6rem;
+                .font-size {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
 }
