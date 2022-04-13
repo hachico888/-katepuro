@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
 </head>
 <body>
     <header class="header">
         <img src="images/katepro_white .png" alt="カテプロロゴ">
         <div class="header-btn">
-            <a href="#!" class="button">無料の公式LINEで相談する</a>
+            <a href="https://lin.ee/Gkjo5zJ" class="button">無料の公式LINEで相談する</a>
         </div>
     </header>
-    <section class="main">
+    <section class="main fd-in">
         <img src="images/main-visual-katepuro.png" alt="プログラミングの家庭教師サービス　カテプロ">
         <div class="main-btn">
-            <a href="#!" class="b-button">無料の公式LINEで相談する</a>
+            <a href="https://lin.ee/HiKIBV9" class="b-button">無料の公式LINEで相談する</a>
         </div>
     </section>
-    <section class="problem">
+    <section class="problem fd-in">
             <h2 class="section-title-yellow title-pink">
                 こんなお悩みありませんか？
             </h2>
@@ -58,13 +58,13 @@
             </div>
         </div>
     </section>
-    <section class="agitation">
+    <section class="agitation fd-in">
         <h2 class="section-title-yellow title-blue">
             プログラミングは稼げる副業として有名ですが…
         </h2>
         <img src="images/agitation.png" alt="プログラミングは稼げる副業として有名ですが">
     </section>
-    <section class="narrow-down">
+    <section class="narrow-down fd-in">
         <div class="container">
             <img class="position-left" src="images/bard-left.png" alt="bard-left">
             <h2 class="logo">    
@@ -112,13 +112,16 @@
                     <li class="narrow-down-text-container zoom">
                         <img class="icon-container" src="images/check-icon.png" alt="チェックアイコン">
                         <p class="text-size">
-                            <strong>早朝・夜間のオンラインサポート:<br>
-                            <span class="p-red">早朝は5時〜　夜間は21時~</span></strong>
+                            <strong>
+                                早朝・夜間のオンラインサポート:<br>
+                                <span class="p-red time">早朝は5時〜</span>
+                                <span class="p-red time">夜間は21時~</span>
+                            </strong>
                         </p>
                         <img class="zoom-logo" src="images/zoom-ok-logo.png" alt="zoom-ok!">
                     </li>
                 </ul>
-                <div class="narrow-down-img-container">
+                <div class="narrow-down-img-container fd-in">
                     <img class="narrow-down-img1" src="images/narrow-down-img1.png" alt="家族の起床前に！">
                     <img class="narrow-down-img2" src="images/narrow-down-img2.png" alt="家事がひと段落してから！">  
                 </div>
@@ -128,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section class="menter">
+    <section class="menter fd-in">
         <div class="img-container">
             <img class="menter-leaf" src="images/menter-leaf.png" alt="リーフの枠">
         </div>
@@ -144,13 +147,13 @@
                     育児も日々楽しんでいます！<br>
                     <span class="p-blue">ご家庭の状況に合わせて</span><br>
                     学習をサポートします！<br>
-                    <span class="p-pink">一緒に</span><span class="p-blue">稼げるスキル</span>を
+                    <span class="p-pink">一緒に</span><span class="p-blue">稼げるスキル</span>を<br>
                     <span class="p-pink">身につけましょう！</span>
                 </strong></p>
             </div>
         </div>
         <div class="menter-btn">
-            <a href="#!" class="b-button">無料の公式LINEで相談する</a>
+            <a href="https://lin.ee/45DW1t6" class="b-button">無料の公式LINEで相談する</a>
         </div>
     </section>
     <footer class="footer">
@@ -158,5 +161,17 @@
             <img src="images/katepro_transparent.png" alt="カテプロロゴ">
             <p>2022</p>
     </footer>
+    <!--この上に</footer>があります-->
+    <script>
+        $(function () {
+        $('.fd-in').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+            if (isInView) {
+            $(this).stop().addClass('fd-done');
+            } else {
+            $(this).stop().removeClass('fd-done');
+            }
+        });
+        });
+    </script>
 </body>
 </html>
