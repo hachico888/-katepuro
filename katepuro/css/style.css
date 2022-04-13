@@ -1,9 +1,8 @@
-html,
 body {
   font-family: "Noto Sans JP", sans-serif;
   max-width: 1280px;
   color: #333;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 a {
@@ -45,6 +44,9 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 3%;
 }
 
@@ -53,12 +55,20 @@ li {
 }
 
 .menter .container {
-  padding: 0% 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menter-btn {
-  padding: 5%;
+  padding: 3% 0 6%;
   text-align: center;
 }
 
@@ -77,7 +87,7 @@ li {
 }
 
 .footer img {
-  height: 80px;
+  height: 75px;
 }
 
 .narrow-down .container {
@@ -100,10 +110,6 @@ li {
   text-align: center;
 }
 
-.narrow-down .container .logo img {
-  width: 60%;
-}
-
 .narrow-down .container .narrow-down-text {
   margin: 0 6%;
 }
@@ -121,5 +127,19 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transform: translate(0, 80px);
+          transform: translate(0, 80px);
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+
+.fade-in.scroll-in {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=style.css.map */
