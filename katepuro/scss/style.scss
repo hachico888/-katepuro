@@ -1,9 +1,8 @@
-html,
 body {
   font-family: "Noto Sans JP", sans-serif;
   max-width: 1280px;
   color: #333;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 a {
@@ -38,6 +37,7 @@ li {
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 3%;
   }
 }
@@ -45,11 +45,13 @@ li {
 .menter {
   margin-top: 12%;
   .container {
-    padding: 0% 4%;
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
+    align-items: center;
   }
   &-btn {
-    padding: 5%;
+    padding: 3% 0 6%;
     text-align: center;
   }
 }
@@ -61,7 +63,7 @@ li {
   justify-content: center;
   align-items: center;
     img {
-      height: 80px;
+      height: 75px;
     }
 }     
 
@@ -80,9 +82,6 @@ li {
       }
       .logo {
         text-align: center;
-        img {
-          width: 60%;
-        }
       }
       .narrow-down-text {
         margin: 0 6%;
@@ -95,4 +94,14 @@ li {
           }
       }
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translate(0,80px);
+  transition: all 800ms;
+}
+.fade-in.scroll-in {
+  opacity: 1;
+  transform: translate(0,0);
 }
